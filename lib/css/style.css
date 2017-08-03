@@ -45,7 +45,9 @@ table {
 /*--------HEADER STYLES--------*/
 body {
   background-color: #c0caca;
-  overflow: hidden;
+  height: auto;
+	width: auto;
+	padding: 5px;
 }
 .banner {
   /*background-image:url('/Users/malikrobinson/Documents/road2hire/biography/lib/img/nikon.jpg');*/
@@ -53,9 +55,10 @@ body {
   border: solid;
   padding: 40px;
   margin: 5px;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Pacifico', cursive;
   border-width: 15px;
   font-size: 40px;
+	display: inline-block;
 }
 
 .navigation {
@@ -92,15 +95,21 @@ body {
   width: 300px;
   height: 300px;
   padding: 50px 20px;
+	display: inline-block;
+	/*border-radius: 50% 50%;*/
 }
-/*--------HOME PAGE STYLES--------*/
+/*--------HOME PAGE CONTENT STYLES--------*/
+
+.content {
+	padding: 25px 0;
+	width: 97%;
+	text-align: center;
+}
 .road2hire {
   border: 2px solid black;
 	border-radius: /*Type percentage here.*/;
 	display: inline-block;
 	padding: 20px 35px;
-	position: relative;
-	left: 200px;
 	margin-top: 10px;
 }
 
@@ -109,4 +118,19 @@ body {
 	padding-bottom: 10px;
 	font-family: 'Pacifico', cursive;
 	font-size: 2em;
+	border: 2px groove black;
+	padding: 5px;
+	display: inline-block;
+}
+.my_role {
+	text-align: center;
+	margin: 50px;
+	width: inherit;
+	border: 2px solid;
+	display: inline-block;
+}
+/*--------BIOGRAPHY PAGE CONTENT STYLES--------*/
+.bio-content img {
+	width: 500px;
+	height: 500px;
 }
