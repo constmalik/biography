@@ -1,23 +1,61 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Malik Robinson</title>
-    <link href="lib/css/style.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Pacifico|Quicksand" rel="stylesheet">
-  </head>
-  <body>
-    <div class="container">
-      <div class="banner">
-        <h1>Malik Robinson</h1>
-      </div>
-      <ul class="navigation">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="biography.html">Biography</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="codepen.html">CodePen</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html" class="selected">Contact</a></li>
-      </ul>
+<head>
+  <title>Malik Robinson</title>
+  <link href="lib/css/style.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Pacifico|Quicksand" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="banner">
+      <h1>Malik Robinson</h1>
     </div>
-  </body>
+    <ul class="navigation">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="biography.html">Biography</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="codepen.html">CodePen</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html" class="selected">Contact</a></li>
+    </ul>
+    <form id="contact">
+        <label for="fname">First Name:</label>
+        <input type="text" name="fname" placeholder="First Name" id="fname" />
+
+        <label for="lname">Last Name:</label>
+        <input type="text" name="lname" placeholder="Last Name" id="lname" />
+
+          <label for="company">Company:</label>
+          <input type="text" name="company" placeholder="Company" id="company" />
+
+          <label for="email">Email:</label>
+          <input type="email" name="lname" placeholder="Enter your email" id="email" />
+
+        <label for="tel">Phone Number:</label>
+        <input type="tel" name="tel" placeholder="555-555-5555" id="tel" />
+
+        <label for="coments">Comments/Questions:</label>
+        <textarea  cols="30"  placeholder="Any questions?" id="comments"></textarea>
+
+        <input type="submit" value="Submit" id="submit-btn" onclick="contactForm()">
+      </div>
+    </form>
+  </div>
+  <footer>
+    <div class="copyright">
+      <p>&copy;2017 Malik Robinson</p>
+      <p>
+        Disclaimer: All graphics are used for educational purposes only, and not for profit,
+        in accordance with the Fair Use Act. All trademarks, trade names, or logos mentioned
+        or used are the property of their respective owners. It will be removed at the request
+        of copyright owner(s).
+      </p>
+    </div>
+    <div class="logos">
+      <a href="https://www.instagram.com/capturedbymalik/" target="_blank"><img src="lib/img/instagram-logo.png" alt="IG"></a>
+      <a href="https://www.linkedin.com/in/maliklrobinson/" target="_blank"><img src="lib/img/linkedin-logo.png" alt="LinkedIn"></a>
+      <a href="https://www.twitter.com/maliklrobinson" target="_blank"><img src="lib/img/twitter-logo.png" alt="Twitter"></a>
+    </div>
+  </footer>
+</body>
 </html>

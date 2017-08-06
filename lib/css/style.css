@@ -42,12 +42,24 @@ table {
 	border-spacing: 0;
 }
 
+/*--------MEDIA QUERY STYLES--------*/
+@media screen (min-width: 600px){
+	[class*="container"] {
+		width: 100%;
+	}
+
+}
+
 /*--------HEADER STYLES--------*/
-body {
+html {
   background-color: #c0caca;
   height: auto;
 	width: auto;
-	padding: 5px;
+	padding: 5px 0;
+	box-sizing: border-box;
+	position: relative;
+	margin: 0;
+
 }
 .banner {
   /*background-image:url('/Users/malikrobinson/Documents/road2hire/biography/lib/img/nikon.jpg');*/
@@ -62,7 +74,7 @@ body {
 }
 
 .navigation {
-  text-align: right;
+  text-align: center;
 }
 .navigation a, navigation a:visited {
   text-decoration: none;
@@ -72,7 +84,7 @@ body {
 .navigation a:hover {
   background-color: #dfe4e4;
   padding: 25px 30px;
-  box-shadow: 5px 5px 5px #3c3c3d;
+  box-shadow: 0px 0px 1px #3c3c3d;
 }
 .navigation li {
   text-align: center;
@@ -90,27 +102,22 @@ body {
   padding: 25px 30px;
   box-shadow: 5px 5px 5px #3c3c3d;
 }
-/*--------GALLERY STYLES--------*/
-.gallery img {
-  width: 300px;
-  height: 300px;
-  padding: 50px 20px;
-	display: inline-block;
-	/*border-radius: 50% 50%;*/
-}
+
 /*--------HOME PAGE CONTENT STYLES--------*/
 
 .content {
 	padding: 25px 0;
 	width: 97%;
+	height: auto;
 	text-align: center;
+		min-height: 100%;
 }
 .road2hire {
   border: 2px solid black;
 	border-radius: /*Type percentage here.*/;
 	display: inline-block;
 	padding: 20px 35px;
-	margin-top: 10px;
+	margin: 10px ;
 }
 
 .road2hire h2 {
@@ -124,13 +131,119 @@ body {
 }
 .my_role {
 	text-align: center;
-	margin: 50px;
-	width: inherit;
+	margin: 10px 0 75px 0;
+	width: 100%;
 	border: 2px solid;
+	padding: 20px 35px;
 	display: inline-block;
 }
+.content img{
+	width: 30%;
+	height:15%;
+	border-radius: 7% 7%;
+}
 /*--------BIOGRAPHY PAGE CONTENT STYLES--------*/
-.bio-content img {
-	width: 500px;
-	height: 500px;
+.bio-content {
+	text-align: center;
+	height: auto;
+}
+#bio-photo img {
+	width: 30%;
+	height: 15%;
+	/*margin: 20px;*/
+	border: 9px solid #4c5050;
+	box-shadow: 10px 4px 10px #99a1a1;
+}
+.biography {
+	padding: 25px 50px;
+	font-family: 'Quicksand', sans-serif;
+	background-color: #96a7a7;
+	color: white;
+	border: 25px solid black;
+	margin: 20px;
+	position: inherit;
+}
+
+/*--------RESUME PAGE CONTENT STYLES--------*/
+.resume-content {
+	text-align: center;
+	margin: 0 175px;
+	border: 5px solid;
+	padding: 10px 0;
+}
+#resume-header h2 {
+	font-size: 2em;
+}
+.resume h2 {
+	font-weight: bold;
+	padding: 8px;
+}
+.jobs-content h3 {
+	font-style: oblique;
+	padding: 5px;
+
+}
+
+/*--------CODEPEN PAGE CONTENT STYLES--------*/
+.codepen-content {
+	text-align: center;
+	width: 100%;
+
+}
+
+/*--------GALLERY PAGE CONTENT STYLES--------*/
+.gallery-content h2 {
+	text-align:center;
+}
+table {
+	border: 8px solid;
+	margin-left: 30px;
+	margin: 20px 30px;
+	background-color: #96a7a7;
+}
+.gallery img {
+  width: 300px;
+  height: 300px;
+  padding: /*50px 20px*/0;
+	margin: 10px;
+	border: 1px solid;
+	border-radius: 7% 7%;
+	display: inline-block;
+	box-shadow: 5px 5px 5px #323232;
+	/*border-radius: 50% 50%;*/
+}
+.gallery figcaption {
+	font-style: italic;
+	font-size: 1.15em;
+	text-align: center;
+	font-family: 'Bungee Shade', cursive;
+	color: #191919;
+	text-decoration: none;
+}
+
+/*--------CONTACT PAGE CONTENT STYLES--------*/
+label, input, textarea {
+	display: block;
+	width: 60%;
+	margin: 2% 20%;
+}
+
+
+/*--------FOOTER CONTENT STYLES--------*/
+footer {
+	position: absolute;
+	height: 100px;
+	border: 0 solid;
+	background-color: #d9d2d2;
+	margin-top: 0;
+	padding: 2px;
+	text-align: center;
+}
+footer img {
+	width: 30px;
+	height: 30px;
+}
+footer .copyright {
+	text-align: center;
+	margin: 10px;
 }
