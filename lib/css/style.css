@@ -66,9 +66,9 @@ html {
   text-align: left;
   border: solid;
   padding: 40px;
-  margin: 5px;
+
   font-family: 'Pacifico', cursive;
-  border-width: 15px;
+  border-width: 10px;
   font-size: 40px;
 	display: inline-block;
 }
@@ -110,14 +110,13 @@ html {
 	width: 97%;
 	height: auto;
 	text-align: center;
-		min-height: 100%;
+	min-height: 100%;
 }
 .road2hire {
-  border: 2px solid black;
-	border-radius: /*Type percentage here.*/;
+  border: 10px solid black;
 	display: inline-block;
 	padding: 20px 35px;
-	margin: 10px ;
+	font-size: 20px;
 }
 
 .road2hire h2 {
@@ -137,10 +136,11 @@ html {
 	padding: 20px 35px;
 	display: inline-block;
 }
-.content img{
+#homephoto img {
 	width: 30%;
-	height:15%;
+	height:30%;
 	border-radius: 7% 7%;
+
 }
 /*--------BIOGRAPHY PAGE CONTENT STYLES--------*/
 .bio-content {
@@ -168,7 +168,7 @@ html {
 .resume-content {
 	text-align: center;
 	margin: 0 175px;
-	border: 5px solid;
+	border: 5px dotted;
 	padding: 10px 0;
 }
 #resume-header h2 {
